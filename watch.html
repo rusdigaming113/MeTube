@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo-link">
+            <h1>MeTube</h1>
+        </a>
+
+        <form class="search-form" id="search-form">
+            <input type="text" placeholder="Cari" class="search-input" id="search-input">
+            <button type="submit" class="search-button">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" width="20" height="20" fill="white"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+            </button>
+        </form>
+
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+        </nav>
+        
+        <div class="header-controls">
+            <a href="upload.html" class="upload-icon-link" id="upload-icon-link"></a>
+            <div class="header-user" id="header-user"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <main class="main-content">
+            <div class="main-video-player" id="main-video-player"></div>
+            <h2 id="main-video-title">Memuat video...</h2>
+            <div id="main-video-channel">
+                <p>Memuat channel...</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Berikutnya</h3>
+            <div class="video-list" id="video-list"></div>
+        </aside>
+
+    </div>
+
+    <script src="video-manager.js"></script>
+    <script src="follow-manager.js"></script> <script src="watch.js"></script>
+    <script src="global.js"></script>
+</body>
+</html>

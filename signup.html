@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MeTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-container">
+        <a href="index.html" class="auth-logo"><h1>MeTube</h1></a>
+        <h2>Buat Akun MeTube</h2>
+        <p>Masukkan detail Anda</p>
+
+        <form id="signup-form">
+            <div class="name-group">
+                <div class="input-group">
+                    <input type="text" id="firstName" placeholder=" " required>
+                    <label for="firstName">Nama Depan</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="lastName" placeholder=" " required>
+                    <label for="lastName">Nama Belakang</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="username" placeholder=" " required>
+                <label for="username">Buat Username</label>
+                <span class="domain">@metube.com</span>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="password" placeholder=" " required>
+                <label for="password">Password</D>
+            </div>
+            <div class="input-group">
+                <input type="password" id="confirmPassword" placeholder=" " required>
+                <label for="confirmPassword">Konfirmasi Password</label>
+            </div>
+            
+            <p class="auth-error" id="auth-error"></p>
+
+            <div class="auth-actions">
+                <a href="signin.html" class="auth-link">Sign in saja</a>
+                <button type="submit" class="auth-button">Buat Akun</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

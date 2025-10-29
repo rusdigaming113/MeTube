@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - MeTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-container">
+        <a href="index.html" class="auth-logo"><h1>MeTube</h1></a>
+        <h2>Sign In</h2>
+        <p>Gunakan Akun MeTube Anda</p>
+
+        <form id="signin-form">
+            <div class="input-group">
+                <input type="text" id="username" placeholder=" " required>
+                <label for="username">Username (contoh: testes123)</label>
+                <span class="domain">@metube.com</span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder=" " required>
+                <label for="password">Password</label>
+            </div>
+            
+            <p class="auth-error" id="auth-error"></p>
+
+            <div class="auth-actions">
+                <a href="signup.html" class="auth-link">Buat akun</a>
+                <button type="submit" class="auth-button">Berikutnya</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

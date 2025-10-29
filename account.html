@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setelan Akun - MeTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo-link">
+            <h1>MeTube</h1>
+        </a>
+
+        <form class="search-form" id="search-form">
+            <input type="text" placeholder="Cari" class="search-input" id="search-input">
+            <button type="submit" class="search-button">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" width="20" height="20" fill="white"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+            </button>
+        </form>
+
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+        </nav>
+        
+        <div class="header-controls">
+            <a href="upload.html" class="upload-icon-link" id="upload-icon-link"></a>
+            <div class="header-user" id="header-user"></div>
+        </div>
+    </header>
+
+    <main class="settings-container">
+        <h2>Setelan Akun</h2>
+        <p>Ubah nama dan foto profil Anda.</p>
+        <form id="settings-form">
+            <div class="form-group profile-pic-section">
+                <label>Foto Profil</label>
+                <div class="profile-pic-preview" id="profile-pic-preview"></div>
+                <button type="button" class="change-pic-btn" id="change-pic-btn">Ubah Foto</button>
+                <input type="file" id="file-input" accept="image/*" style="display: none;">
+            </div>
+            <div class="form-group">
+                <label for="firstName">Nama Depan</label>
+                <input type="text" id="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Nama Belakang</label>
+                <input type="text" id="lastName" required>
+            </div>
+            <p class="settings-success" id="settings-success"></p>
+            <button type="submit" class="auth-button">Simpan Perubahan</button>
+        </form>
+    </main>
+
+    <script src="video-manager.js"></script>
+    <script src="follow-manager.js"></script> <script src="global.js"></script>
+    <script src="account.js"></script>
+</body>
+</html>
